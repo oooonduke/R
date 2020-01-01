@@ -1,6 +1,6 @@
 #保存変数
-ORIGINAL <- "//home//busi//デスクトップ//titanic//train.csv"
-TEST <- "//home//busi//デスクトップ//titanic//test.csv"
+ORIGINAL <- "//home//USER//DESKTOP//titanic//train.csv"
+TEST <- "//home//USER//DESKTOP//titanic//test.csv"
 
 # 学習用データの読み込み
 #titanic_original <- read.csv("train.csv", stringsAsFactors=F, na.strings=(c("NA", "")))
