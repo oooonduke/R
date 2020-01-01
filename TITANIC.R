@@ -62,12 +62,3 @@ test_result <- ifelse(predict(glm_result,newdata=titanic_test,type="response")>=
 output <- cbind(titanic_test$PassengerId,test_result)
 # 先頭から数行を確認
 head(output)
-
-
-# 予測モデルをテストデータにあてはめ
-# 生存確率0.5以上なら生存:1、それ以外は死亡:0
-test_result <- ifelse(predict(glm_result,newdata=titanic_test,type="response")>=0.5,1,0)
-# PassengerId（乗客ID）を予測結果に列結合
-output <- cbind(titanic_test$PassengerId,test_result)
-# 先頭から数行を確認
-head(output)
